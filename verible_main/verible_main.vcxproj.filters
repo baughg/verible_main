@@ -27,6 +27,9 @@
     <ClInclude Include="..\..\verible\common\util\init_command_line.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\verible\common\util\iterator_range.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="verible_main.cpp">

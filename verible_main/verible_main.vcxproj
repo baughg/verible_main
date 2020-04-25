@@ -157,6 +157,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\verible\common\util\file_util.h" />
     <ClInclude Include="..\..\verible\common\util\init_command_line.h" />
+    <ClInclude Include="..\..\verible\common\util\iterator_range.h" />
     <ClInclude Include="..\..\verible\common\util\logging.h" />
     <ClInclude Include="unistd.h" />
   </ItemGroup>
