@@ -48,6 +48,18 @@
     <ClInclude Include="..\..\verible\verilog\analysis\verilog_analyzer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\verible\verilog\parser\verilog_parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\verible\common\parser\bison_parser_adapter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\verible\common\parser\parse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\verible\common\parser\parser_param.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="verible_main.cpp">
@@ -90,6 +102,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\verible\verilog\parser\verilog_lexer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\verible\verilog\parser\verilog_parser.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\verible\common\parser\parser_param.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
