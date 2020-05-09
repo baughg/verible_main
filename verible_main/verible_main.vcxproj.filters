@@ -30,6 +30,24 @@
     <ClInclude Include="..\..\verible\common\util\iterator_range.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\verible\common\text\concrete_syntax_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\verible\common\text\parser_verifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\verible\common\text\text_structure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\verible\common\text\token_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\verible\verilog\CST\verilog_tree_print.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\verible\verilog\analysis\verilog_analyzer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="verible_main.cpp">
@@ -45,6 +63,33 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\verible\common\util\init_command_line.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\verible\common\text\concrete_syntax_tree.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\verible\common\text\parser_verifier.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\verible\common\text\text_structure.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\verible\common\text\token_info.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\verible\verilog\CST\verilog_tree_print.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\verible\verilog\analysis\verilog_analyzer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\verible\verilog\parser\verilog.tab.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\verible\verilog\parser\verilog.yy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\verible\verilog\parser\verilog_lexer.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

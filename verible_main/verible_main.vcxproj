@@ -106,7 +106,7 @@
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>..\..\verible;..\..\abseil-cpp;..\..\getopt;.\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\verible;..\..\abseil-cpp;..\..\getopt;.\;$(WIN_FLEX_BISON)\bin\Release</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -155,17 +155,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\verible\common\text\concrete_syntax_tree.h" />
+    <ClInclude Include="..\..\verible\common\text\parser_verifier.h" />
+    <ClInclude Include="..\..\verible\common\text\text_structure.h" />
+    <ClInclude Include="..\..\verible\common\text\token_info.h" />
     <ClInclude Include="..\..\verible\common\util\file_util.h" />
     <ClInclude Include="..\..\verible\common\util\init_command_line.h" />
     <ClInclude Include="..\..\verible\common\util\iterator_range.h" />
     <ClInclude Include="..\..\verible\common\util\logging.h" />
+    <ClInclude Include="..\..\verible\verilog\analysis\verilog_analyzer.h" />
+    <ClInclude Include="..\..\verible\verilog\CST\verilog_tree_print.h" />
     <ClInclude Include="unistd.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\getopt\getopt.c" />
+    <ClCompile Include="..\..\verible\common\text\concrete_syntax_tree.cc" />
+    <ClCompile Include="..\..\verible\common\text\parser_verifier.cc" />
+    <ClCompile Include="..\..\verible\common\text\text_structure.cc" />
+    <ClCompile Include="..\..\verible\common\text\token_info.cc" />
     <ClCompile Include="..\..\verible\common\util\file_util.cc" />
     <ClCompile Include="..\..\verible\common\util\init_command_line.cc" />
     <ClCompile Include="..\..\verible\common\util\logging.cc" />
+    <ClCompile Include="..\..\verible\verilog\analysis\verilog_analyzer.cc" />
+    <ClCompile Include="..\..\verible\verilog\CST\verilog_tree_print.cc" />
+    <ClCompile Include="..\..\verible\verilog\parser\verilog.tab.cc" />
+    <ClCompile Include="..\..\verible\verilog\parser\verilog.yy.cc" />
+    <ClCompile Include="..\..\verible\verilog\parser\verilog_lexer.cc" />
     <ClCompile Include="verible_main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
